@@ -10,7 +10,7 @@ export const Login = () => {
 
     const handleLogin = (e) => {
         e.preventDefault()
-        fetch(`https://whale-app-pixao.ondigitalocean.app/login`, {
+        fetch(`http://localhost:8000/login`, {
             method: "POST",
             body: JSON.stringify({ email: email, password }),
             headers: {
